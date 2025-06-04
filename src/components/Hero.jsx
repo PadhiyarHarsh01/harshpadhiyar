@@ -1,6 +1,9 @@
 "use client"
 import { motion } from "framer-motion"
 import { FiDownload, FiMail } from "react-icons/fi"
+import profileImg from '../assets/Harsh_Padhiyar.png';
+import resumePdf from '../assets/Harshkumar_Padhiyar - Resume.pdf';
+
 
 function Hero() {
   return (
@@ -34,7 +37,7 @@ function Hero() {
                   Connect with me
                 </motion.button>
               </a>
-              <a href="./src/assets/Harshkumar_Padhiyar - Resume.pdf" download tabIndex={-1}>
+              <a href={resumePdf} download tabIndex={-1}>
                 <motion.button
                   className="flex items-center gap-2 px-5 py-2.5 rounded-lg border border-input bg-background hover:bg-accent hover:text-accent-foreground font-semibold shadow-md hover:shadow-lg transition-all duration-200 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary/20"
                   whileHover={{ scale: 1.07 }}
@@ -53,7 +56,7 @@ function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <img src= './src/assets/Harsh_Padhiyar.png' alt="Profile" className="w-full h-full object-contain" loading="lazy"/>
+            <img src= {profileImg} alt="Profile" className="w-full h-full object-contain" loading="lazy"/>
           </motion.div>
         </div>
       </div>

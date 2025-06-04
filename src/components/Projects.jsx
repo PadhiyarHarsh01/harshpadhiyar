@@ -2,12 +2,15 @@
 
 import { useEffect, useRef, useState } from "react"
 import { FiExternalLink, FiGithub } from "react-icons/fi"
+import inventoryImg from '../assets/inventory_management_sys.png';
+import pixelVerseImg from '../assets/dall-e.webp';
+import expenseTrackerImg from '../assets/expense_tracker.webp';
 
 const projects = [
   {
     title: "Inventory Management System",
     description: "A console-based inventory system built with Java, using CSV files for storage. Supports adding, updating, and deleting products with auto-incremented IDs and robust exception handling.",
-    image: "./src/assets/inventory_management_sys.png",
+    image: inventoryImg,
     technologies: ["Java", "CSV", "OOP", "File I/O"],
     liveLink: "#",
     githubLink: "https://github.com/PadhiyarHarsh01/Inventory-Management-System",
@@ -15,7 +18,7 @@ const projects = [
   {
     title: "PixelVerse - Text-to-Picture Generation",
     description: "An AI-powered image generation web application using Stable Diffusion, allowing users to create, edit, and download custom images with real-time prompt-based generation.",
-    image: "./src/assets/dall-e.webp",
+    image: pixelVerseImg,
     technologies: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Stable Diffusion"],
     liveLink: "#",
     githubLink: "https://github.com/PadhiyarHarsh01/PixelVerse",
@@ -23,7 +26,7 @@ const projects = [
   {
     title: "Expense Tracker - Android App",
     description: "A modern Android application built using Kotlin and Firebase Realtime Database, designed to help users track their daily expenses efficiently with a clean UI, authentication flow, and persistent data storage.",
-    image: "./src/assets/expense_tracker.webp",
+    image: expenseTrackerImg,
     technologies: ["Kotlin", "XML", "Firebase Realtime Database", "ConstraintLayout"],
     liveLink: "#",
     githubLink: "https://github.com/PadhiyarHarsh01/ExpenceTracker",
